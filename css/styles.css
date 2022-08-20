@@ -697,8 +697,10 @@ body {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    text-decoration-line: underline;
     color: var(--accent);
+}
+.check-link::after {
+    
 }
 .icon-check-mark {
     fill: transparent;
@@ -713,7 +715,46 @@ body {
     align-items: center;
     justify-content: center;
     margin-right: 7px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.input-check:checked + .check-text span {
+    background-color: var(--accent);
+    border-color: var(--accent);
+}
+.input-check:checked + .check-text .icon-check-mark {
+    fill: #FFFFFF;
+}
+.input-check:focus + .check-text span {
+    border-color: var(--accent);
+}
+.form-btn {
+    display: inline-block;
+    font-family: inherit;
+    min-width: 200px;
+    padding: 10px 52px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    background-color: var(--accent);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: transparent;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);   
+}
+.button-send {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-btn:hover,
+.form-btn:focus {
+background-color: #188CE8; 
+}
+
 /* -------portfolio-------- */
 .header-nav .portfolio-link {
     color: var(--accent, blue);
