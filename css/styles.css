@@ -694,6 +694,7 @@ body {
     color: var(--text-color);
 }
 .check-link {
+    border-bottom: 1px solid var(--accent);
     color: var(--accent);     
 }
 .icon-check-mark {
