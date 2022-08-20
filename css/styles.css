@@ -665,7 +665,7 @@ body {
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
 }
-.input-wrap{
+.input-wrap {
     position: relative;
 }
 .input-icon {
@@ -694,13 +694,11 @@ body {
     color: var(--text-color);
 }
 .check-link {
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: var(--accent);
+   color: var(--accent);
 }
-.check-link::after {
+.check-text::after {
     
+
 }
 .icon-check-mark {
     fill: transparent;
@@ -754,7 +752,34 @@ body {
 .form-btn:focus {
 background-color: #188CE8; 
 }
-
+ /*-----------footer-form------ */
+.footer-form-text {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.footer-input {
+    width: 358px;
+    height: 50px;
+    background-color: #2F303A;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+}
+.footer-input::placeholder {
+    display: flex;
+    align-items: center;
+    margin-left: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
 /* -------portfolio-------- */
 .header-nav .portfolio-link {
     color: var(--accent, blue);
