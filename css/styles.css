@@ -722,7 +722,6 @@ body {
     border-color: var(--accent);
 }
 .form-btn {
-    display: inline-block;
     font-family: inherit;
     min-width: 200px;
     padding: 10px 52px;
